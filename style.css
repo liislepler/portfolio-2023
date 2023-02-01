@@ -9,3 +9,83 @@
     font-family: 'Special Elite', cursive;
     font-family: 'Quicksand', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.cover-container {
+    position: relative;
+    width: 878px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ui-design-button {
+    position: absolute;
+    top: 140px;
+    left: 640px;
+}
+
+.graphic-design-button {
+    position: absolute;
+    top: 240px;
+    left: 630px;
+}
+
+.animation-button {
+    position: absolute;
+    top: 350px;
+    left: 640px;
+}
+
+.illustrations-button {
+    position: absolute;
+    top: 470px;
+    left: 640px;
+}
+
+.aboutme-button {
+    position: absolute;
+    top: 570px;
+    left: 640px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+    position: relative;
+    z-index: -1;
+}
+
+.ui-design-button h3,
+.graphic-design-button h3,
+.animation-button h3,
+.illustrations-button h3,
+.aboutme-button h3 {
+    position: absolute;
+    left: 80px;
+    top: 8px;
+    font-family: 'Special Elite', cursive;
+    font-weight: 500;
+}
+
+.graphic-design-button h3 {
+    left: 90px;
+}

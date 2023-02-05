@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI design</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Epilogue:wght@400;600;700&family=Homemade+Apple&family=Lato:wght@400;900&family=Love+Ya+Like+A+Sister&family=Poppins:wght@400;500;700&family=Quicksand:wght@400;500&family=Roboto:wght@400;700&family=Rubik+Vinyl&family=Special+Elite&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="pages-container">
+
+        <img class="inside" src="/src/portfolio-inside-both.png" height="860px">
+
+        <a href="/index.html">
+            <div class="home-button-pages">
+                <h3>Home</h3>
+                <img class="box4" src="/src/box6.png" height="fit-content">
+            </div>
+        </a>
+
+        <img class="graphic-button" src="/src/button2.png" height="60px">
+        <a href="/work/uidesign1.html">
+            <div class="ui-design-button-pages">
+                <h3>UI design</h3>
+                <img class="box1" src="/src/box1.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/graphicdesign1.html">
+            <div class="graphic-design-button-pages" id="graphic-selected">
+                <h3>Graphic design</h3>
+                <img class="box2" src="/src/box2.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/animation.html">
+            <div class="animation-button-pages">
+                <h3>Animation &<br>Game design</h3>
+                <img class="box3" src="/src/box3.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/illustrations.html">
+            <div class="illustrations-button-pages">
+                <h3>Illustrations</h3>
+                <img class="box4" src="/src/box4.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/aboutme.html">
+            <div class="aboutme-button-pages">
+                <h3>About me &<br>Contact</h3>
+                <img class="box5" src="/src/box5.png" height="fit-content">
+            </div>
+        </a>
+
+        <div class="page">
+            <div class="magazine-container">
+                <div class="titleSlide">
+                    <img src="/src/magazine-img/title1.png" width="100%" height="100px">
+                </div>
+                <div class=" titleSlide ">
+                    <img src="/src/magazine-img/title2.png " width="100%" height="100px">
+                </div>
+                <div class=" titleSlide ">
+                    <img src="/src/magazine-img/title3.png " width="100% " height="100px ">
+                </div>
+
+                <div class="first ">
+                    <p>
+                        As part of the course <b>Graphic Design and Visual Communication</b>, I had a group project to make a magazine about graphic design. My group chose our magazine to highlight female designers and artists, therefore everything shown
+                        in our 70-page
+                    </p>
+                    <p>
+                        magazine is done by women. The magazine was done on <b>InDesign</b> with the help of <b>Photoshop</b> and <b>Illustrator</b>.
+                        <br>
+                        <br>Co-creators: Jessica Näsman, Marta Hrkalovic, Mariam Basyouny
+                    </p>
+                </div>
+
+                <div class="second">
+                    <img src="/src/magazine-img/1.png" width="285px">
+                </div>
+            </div>
+            <div class="magazine-img ">
+                <img src="/src/magazine-img/magazine-mock.png" width="500px">
+            </div>
+            <a href="./graphicdesign2.html ">
+                <img class="see-more " src="/src/see-more-button.png " height="100px ">
+            </a>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script>
+            var slideIndex = 0;
+            titleSlides();
+
+            function titleSlides() {
+                var i;
+                var slides = document.getElementsByClassName("titleSlide ");
+                var dots = document.getElementsByClassName("dot ");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none ";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                slides[slideIndex - 1].style.display = "block ";
+                setTimeout(titleSlides, 1000);
+            }
+
+            $(window).load(function() {
+                $(".se-pre-con").fadeOut("slow");;
+            });
+        </script>
+</body>
+
+<div class="se-pre-con"></div>
+
+</html>

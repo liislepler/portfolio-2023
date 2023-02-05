@@ -22,6 +22,17 @@ body {
     overflow-x: hidden;
 }
 
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("/src/loader.gif") center no-repeat #fff;
+    background-size: 20vw;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -169,6 +180,21 @@ a {
     cursor: pointer;
 }
 
+.home-button-pages {
+    position: absolute;
+    top: 110px;
+    left: -70px;
+    cursor: pointer;
+}
+
+.home-button-pages h3 {
+    position: absolute;
+    left: 30px;
+    top: 8px;
+    font-family: 'Special Elite', cursive;
+    font-weight: 500;
+}
+
 .graphic-design-button-pages h3,
 .ui-design-button-pages h3,
 .animation-button-pages h3,
@@ -190,7 +216,8 @@ a {
 .animation-button-pages h3:hover,
 .illustrations-button-pages h3:hover,
 .aboutme-button-pages h3:hover,
-.graphic-design-button-pages h3:hover {
+.graphic-design-button-pages h3:hover,
+.home-button-pages h3:hover {
     font-weight: 600;
 }
 
@@ -293,7 +320,7 @@ a {
 .note-container p {
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 16px;
     width: 200px;
     margin-top: 0;
 }
@@ -354,6 +381,7 @@ a {
     width: 400px;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
+    line-height: 19px;
     margin-bottom: 30px;
 }
 
@@ -392,6 +420,7 @@ a {
 .horoscope-container p {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
+    line-height: 18px;
     margin-top: 40px;
 }
 
@@ -425,8 +454,63 @@ a {
 }
 
 .italian-container p {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    line-height: 20px;
+    line-height: 18px;
     width: 400px;
+}
+
+.graphic-button {
+    position: absolute;
+    left: 1315px;
+    top: 205px;
+}
+
+.graphic-button:hover {
+    top: 200px;
+}
+
+#graphic-selected {
+    left: 1095px;
+}
+
+#graphic-selected h3 {
+    font-weight: 600;
+}
+
+.magazine-container {
+    position: absolute;
+    top: 120px;
+    left: 65px;
+    width: 520px;
+}
+
+.magazine-container .first {
+    display: grid;
+    grid-template-columns: repeat(2, 50% 50%);
+    grid-gap: 20px;
+    width: 380px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+.magazine-container .first p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.magazine-container .second {
+    text-align: center;
+}
+
+.magazine-img {
+    position: absolute;
+    top: 90px;
+    left: 630px;
+}
+
+.magazine-img img:hover {
+    position: relative;
+    z-index: 3000;
 }

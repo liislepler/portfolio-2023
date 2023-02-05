@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UI design</title>
     <link rel="stylesheet" href="/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Epilogue:wght@400;600;700&family=Homemade+Apple&family=Lato:wght@400;900&family=Love+Ya+Like+A+Sister&family=Poppins:wght@400;500;700&family=Quicksand&family=Roboto:wght@400;700&family=Rubik+Vinyl&family=Special+Elite&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Epilogue:wght@400;600;700&family=Homemade+Apple&family=Lato:wght@400;900&family=Love+Ya+Like+A+Sister&family=Poppins:wght@400;500;700&family=Quicksand:wght@400;500&family=Roboto:wght@400;700&family=Rubik+Vinyl&family=Special+Elite&display=swap"
         rel="stylesheet">
 </head>
 
@@ -16,6 +16,13 @@
 
         <img class="inside" src="/src/portfolio-inside-both.png" height="860px">
 
+        <a href="/index.html">
+            <div class="home-button-pages">
+                <h3>Home</h3>
+                <img class="box4" src="/src/box6.png" height="fit-content">
+            </div>
+        </a>
+
         <img class="ui-button" src="/src/button1.png" height="60px">
         <a href="/work/uidesign1.html">
             <div class="ui-design-button-pages" id="ui-selected">
@@ -23,7 +30,7 @@
                 <img class="box1" src="/src/box1.png" height="fit-content">
             </div>
         </a>
-        <a href="/work/graphicdesign.html">
+        <a href="/work/graphicdesign1.html">
             <div class="graphic-design-button-pages">
                 <h3>Graphic design</h3>
                 <img class="box2" src="/src/box2.png" height="fit-content">
@@ -175,7 +182,13 @@
             dots[slideIndex - 1].className += " active";
             setTimeout(noteSlides, 2500);
         }
+
+        $(window).load(function() {
+            $(".se-pre-con").fadeOut("slow");;
+        });
     </script>
 </body>
+
+<div class="se-pre-con"></div>
 
 </html>

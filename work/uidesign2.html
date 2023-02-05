@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI design</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Epilogue:wght@400;600;700&family=Homemade+Apple&family=Lato:wght@400;900&family=Love+Ya+Like+A+Sister&family=Poppins:wght@400;500;700&family=Quicksand&family=Roboto:wght@400;700&family=Rubik+Vinyl&family=Special+Elite&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="pages-container">
+
+        <img class="inside" src="/src/portfolio-inside-both.png" height="860px">
+
+        <img class="ui-button" src="/src/button1.png" height="60px">
+        <a href="/work/uidesign1.html">
+            <div class="ui-design-button-pages" id="ui-selected">
+                <h3>UI design</h3>
+                <img class="box1" src="/src/box1.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/graphicdesign.html">
+            <div class="graphic-design-button-pages">
+                <h3>Graphic design</h3>
+                <img class="box2" src="/src/box2.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/animation.html">
+            <div class="animation-button-pages">
+                <h3>Animation &<br>Game design</h3>
+                <img class="box3" src="/src/box3.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/illustrations.html">
+            <div class="illustrations-button-pages">
+                <h3>Illustrations</h3>
+                <img class="box4" src="/src/box4.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/aboutme.html">
+            <div class="aboutme-button-pages">
+                <h3>About me &<br>Contact</h3>
+                <img class="box5" src="/src/box5.png" height="fit-content">
+            </div>
+        </a>
+
+        <div class="page">
+            <div class="internship-container">
+                <img class="logo" src="/src/internship-img/ws-logo.png" height="170px">
+                <h3>Internship
+                    <br> February - June 2022
+                </h3>
+                <div class="first">
+                    <p>I was an <b>UI & UX design intern</b> at a German start-up company, World Simplified. During my 4-month internship I did wireframes and templates for the company's website. In total, I designed over 70 screens - client, advisor, and
+                        admin view. The designing process was done on <b>Figma</b>. I also took part in re-designing the company's existing graphical profile.
+                    </p>
+                    <img src="/src/internship-img/front-page.png" height="220px">
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div class="internship-img">
+                <div class="dots" style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <div class="internSlide">
+                    <img src="/src/internship-img/account.png" width="100%">
+                </div>
+                <div class="internSlide">
+                    <img src="/src/internship-img/dashboard.png" width="100%">
+                </div>
+                <div class="internSlide">
+                    <img src="/src/internship-img/blog.png" width="100%">
+                </div>
+                <div class="internSlide">
+                    <img src="/src/internship-img/dispute.png" width="100%">
+                </div>
+                <div class="internSlide">
+                    <img src="/src/internship-img/payment.png" width="100%">
+                </div>
+                <div class="internSlide">
+                    <img src="/src/internship-img/Colours.png" width="100%">
+                </div>
+            </div>
+            <a href="./uidesign3.html">
+                <img class="see-more" src="/src/see-more-button.png" height="100px">
+            </a>
+            <a href="./uidesign1.html">
+                <img class="go-back" src="/src/go-back-button.png" height="100px">
+            </a>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            internSlides();
+
+            function internSlides() {
+                var i;
+                var slides = document.getElementsByClassName("internSlide");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(internSlides, 2500);
+            }
+        </script>
+</body>
+
+</html>

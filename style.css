@@ -1,15 +1,4 @@
-.fonts {
-    font-family: 'Cabin Sketch', cursive;
-    font-family: 'Epilogue', sans-serif;
-    font-family: 'Homemade Apple', cursive;
-    font-family: 'Love Ya Like A Sister', cursive;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Rubik Vinyl', cursive;
-    font-family: 'Special Elite', cursive;
-    font-family: 'Quicksand', sans-serif;
-}
-
+@import "../style-mobile.css";
 html {
     scroll-behavior: smooth;
 }
@@ -19,7 +8,6 @@ body {
     min-width: 100%;
     min-height: 100%;
     margin: 0 auto;
-    overflow-x: hidden;
 }
 
 html::-webkit-scrollbar {
@@ -540,7 +528,8 @@ p a:hover {
 }
 
 .genart-container h1 {
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 300;
     font-size: 70px;
     margin: 0;
     margin-bottom: 10px;
@@ -961,4 +950,67 @@ p a:hover {
     position: absolute;
     top: 2px;
     left: 300px;
+}
+
+.cover-container-phone {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .cover-container {
+        display: none;
+    }
+    .cover-container-phone {
+        position: relative;
+        display: block;
+        margin-right: auto;
+        overflow-x: hidden;
+    }
+    .cover-container-phone .cover-phone {
+        margin-left: -100px;
+    }
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin-left: 8px;
+        margin-top: 40px;
+    }
+    .ui-design-button-phone h3,
+    .graphic-design-button-phone h3,
+    .animation-button-phone h3,
+    .illustrations-button-phone h3,
+    .aboutme-button-phone h3 {
+        position: absolute;
+        font-family: 'Special Elite', cursive;
+        font-weight: 500;
+        z-index: 1000;
+    }
+    .ui-design-button-phone h3 {
+        left: 45px;
+        top: 45px;
+    }
+    .animation-button-phone h3 {
+        left: 30px;
+        top: 110px;
+        text-align: center;
+    }
+    .graphic-design-button-phone h3 {
+        left: 198px;
+        top: 45px;
+    }
+    .illustrations-button-phone h3 {
+        left: 205px;
+        top: 117px;
+    }
+    .aboutme-button-phone h3 {
+        text-align: center;
+        left: 130px;
+        top: 182px;
+    }
+    .box-about {
+        position: absolute;
+        left: 95px;
+    }
 }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI design</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin+Sketch:wght@700&family=Cabin:wght@400;700&family=Epilogue:wght@400;600;700&family=Homemade+Apple&family=Lato:wght@400;900&family=Love+Ya+Like+A+Sister&family=Nanum+Gothic:wght@400;800&family=Poppins:wght@400;500;700&family=Quicksand:wght@400;500&family=Roboto:wght@400;700&family=Rubik+Vinyl&family=Seaweed+Script&family=Special+Elite&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="pages-container">
+
+        <img class="inside" src="/src/portfolio-inside-both.png" height="860px">
+
+        <a href="/index.html">
+            <div class="home-button-pages">
+                <h3>Home</h3>
+                <img class="box4" src="/src/box6.png" height="fit-content">
+            </div>
+        </a>
+
+        <img class="animation-button" src="/src/button4.png" height="60px">
+        <a href="/work/uidesign1.html">
+            <div class="ui-design-button-pages" id="ui-selected">
+                <h3>UI design</h3>
+                <img class="box1" src="/src/box1.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/graphicdesign1.html">
+            <div class="graphic-design-button-pages">
+                <h3>Graphic design</h3>
+                <img class="box2" src="/src/box2.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/animation.html">
+            <div class="animation-button-pages" id="animation-selected">
+                <h3>Animation &<br>Game design</h3>
+                <img class="box3" src="/src/box3.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/illustrations.html">
+            <div class="illustrations-button-pages">
+                <h3>Illustrations</h3>
+                <img class="box4" src="/src/box4.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/aboutme.html">
+            <div class="aboutme-button-pages">
+                <h3>About me &<br>Contact</h3>
+                <img class="box5" src="/src/box5.png" height="fit-content">
+            </div>
+        </a>
+
+        <div class="page">
+            <div class="coffee-container">
+                <h1>The History of Coffee</h1>
+                <div class="first">
+                    <div>
+                        <img src="/src/coffee-img/stain1.png" width="300px">
+                    </div>
+                    <p>As part of the course <b>Motion Graphics</b>, I had a group project to make a short animation video. We decided to make a fun video about the history of coffee highlighting the funny stories surrounding the beans journey becoming one
+                        of the most loved drinks. We used <b>After Effects</b> and <b>Photoshop</b>.
+                        <br>
+                        <br> Co-creators: <a target="_blank" href="https://nickimirani.myportfolio.com/">Nicki Mirani</a>, <a target="_blank" href="https://elintri.myportfolio.com/">Elin Tri</a>, <a target="_blank" href="https://www.behance.net/thishayaukwatta">Thishaya Ukwatta</a>
+                    </p>
+                </div>
+                <div>
+                    <video width="100%" height="290px" controls loop>
+                        <source src="/src/coffee-img/video.mp4" type="video/mp4" id="videoText">
+                    </video>
+                </div>
+            </div>
+            <div class="plants-container">
+                <h1>THE WORLD OF PLANTS</h1>
+                <div class="first">
+                    <img src="/src/plants-img/game.png" height="330px">
+                    <a target="_blank" href="https://ju-nmd2020.github.io/final-project-team-14/index.html">
+                        <img class="play" src="/src/plants-img/sun.png" height="180px">
+                    </a>
+                </div>
+                <div class="second">
+                    <p>As part of the course <b>Client-side Programming</b>, I had a group project to make a game using <b>JavaScript</b> and <b>JavaScript libraries</b>. We chose to make a digital board game where our inspiraions were Snakes & Ladders,
+                        The Circus Game, and Animal Crossing. Before this project, we had studied the basics of JavaScript and done small</p>
+                    <p>games but for this project we really had expand our programming skills. While making this game, I had first-time experience with Three.js and making 3D animated objects. The game was met with a lot of good feedback and received the
+                        highest grade.
+                        <br>
+                        <br> Co-creator: <a target="_blank" href="https://elintri.myportfolio.com/">Elin Tri</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/turnjs4/turn.min.js"></script>
+    <script>
+        $(window).load(function() {
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+</body>
+
+<div class="se-pre-con"></div>
+
+</html>

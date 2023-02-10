@@ -38,6 +38,10 @@ a {
     color: black;
 }
 
+p a:hover {
+    color: #D74E25;
+}
+
 .cover-container {
     position: relative;
     width: 878px;
@@ -54,7 +58,7 @@ a {
 }
 
 .ui-design-button:hover,
-.animation-button:hover,
+.animation-button-1:hover,
 .illustrations-button:hover,
 .aboutme-button:hover {
     left: 645px;
@@ -71,7 +75,7 @@ a {
     left: 635px;
 }
 
-.animation-button {
+.animation-button-1 {
     position: absolute;
     top: 350px;
     left: 640px;
@@ -103,7 +107,7 @@ a {
 
 .ui-design-button h3,
 .graphic-design-button h3,
-.animation-button h3,
+.animation-button-1 h3,
 .illustrations-button h3,
 .aboutme-button h3 {
     position: absolute;
@@ -119,7 +123,7 @@ a {
 
 .ui-design-button h3:hover,
 .graphic-design-button h3:hover,
-.animation-button h3:hover,
+.animation-button-1 h3:hover,
 .illustrations-button h3:hover,
 .aboutme-button h3:hover,
 .graphic-design-button h3:hover {
@@ -264,8 +268,9 @@ a {
 .clock-container p {
     font-family: 'Epilogue', sans-serif;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 16px;
     margin-top: 25px;
+    margin-bottom: 0px;
 }
 
 .dot {
@@ -286,10 +291,6 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 30% 70%);
     grid-gap: 10px;
-}
-
-.clock-container video {
-    margin-top: 10px;
 }
 
 .clock-colors {
@@ -318,7 +319,7 @@ a {
 }
 
 .note-container p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Epilogue', sans-serif;
     font-size: 12px;
     line-height: 16px;
     width: 200px;
@@ -332,10 +333,6 @@ a {
 
 .note-container .first img {
     margin-top: 10px;
-}
-
-.note-container .second {
-    margin-top: 30px;
 }
 
 .see-more {
@@ -379,9 +376,9 @@ a {
 
 .internship-container .first p {
     width: 400px;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    line-height: 19px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
     margin-bottom: 30px;
 }
 
@@ -418,9 +415,9 @@ a {
 }
 
 .horoscope-container p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    line-height: 18px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
     margin-top: 40px;
 }
 
@@ -447,16 +444,17 @@ a {
 }
 
 .italian-container h1 {
-    font-family: 'Homemade Apple', cursive;
-    font-size: 40px;
+    font-family: 'Seaweed Script', cursive;
+    font-weight: 400;
+    font-size: 60px;
     margin: 0;
     margin-top: 20px;
 }
 
 .italian-container p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    line-height: 18px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
     width: 400px;
 }
 
@@ -495,9 +493,9 @@ a {
 }
 
 .magazine-container .first p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .magazine-container .second {
@@ -513,4 +511,452 @@ a {
 .magazine-img img:hover {
     position: relative;
     z-index: 3000;
+}
+
+.genart-container {
+    position: absolute;
+    top: 120px;
+    left: 65px;
+    width: 520px;
+}
+
+.genart-container .first {
+    display: grid;
+    grid-template-columns: repeat(2, 35% 60%);
+    grid-gap: 25px;
+    height: 240px;
+    width: 500px;
+}
+
+.genart-container .second {
+    text-align: center;
+}
+
+.genart-container .genSlide:hover {
+    position: relative;
+    z-index: 3000;
+}
+
+.genart-container h1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 70px;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.genart-container p {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+}
+
+.book-container {
+    position: absolute;
+    top: 90px;
+    left: 640px;
+    width: 480px;
+}
+
+.book-container h1 {
+    font-family: 'Rubik Vinyl', cursive;
+    font-size: 50px;
+}
+
+.book-container p {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #D74E25;
+}
+
+#animation-selected {
+    left: 1095px;
+}
+
+#animation-selected h3 {
+    font-weight: 600;
+}
+
+.animation-button {
+    position: absolute;
+    left: 1295px;
+    top: 320px;
+}
+
+.animation-button:hover {
+    top: 315px;
+    left: 1295px;
+}
+
+.coffee-container {
+    position: absolute;
+    top: 120px;
+    left: 65px;
+    width: 520px;
+}
+
+.coffee-container .first {
+    display: grid;
+    grid-template-columns: repeat(2, 50% 45%);
+    grid-gap: 10px;
+    height: 240px;
+}
+
+.coffee-container h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 53px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.coffee-container p {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 50px;
+}
+
+.coffee-container img {
+    margin-top: 82px;
+}
+
+.coffee-container video {
+    margin-top: 30px;
+}
+
+.plants-container {
+    position: absolute;
+    top: 90px;
+    left: 620px;
+    width: 480px;
+}
+
+.plants-container h1 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 46px;
+    color: #115A2C;
+    margin-bottom: 10px;
+}
+
+.plants-container .poem {
+    margin-left: 30%;
+}
+
+.plants-container .play {
+    position: absolute;
+    top: 320px;
+    left: 150px;
+}
+
+.plants-container .play:hover {
+    top: 315px;
+}
+
+.plants-container .second {
+    display: grid;
+    grid-template-columns: repeat(2, 50% 50%);
+    grid-gap: 10px;
+    margin-left: 50px;
+    margin-top: 60px;
+}
+
+.plants-container .second p {
+    width: 210px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #115A2C;
+}
+
+#art-selected {
+    left: 1090px;
+}
+
+#art-selected h3 {
+    font-weight: 600;
+}
+
+.art-button {
+    position: absolute;
+    left: 1310px;
+    top: 440px;
+}
+
+.art-button:hover {
+    top: 435px;
+}
+
+.art1-container {
+    position: absolute;
+    top: 120px;
+    left: 65px;
+    width: 520px;
+}
+
+.art1-container .first {
+    display: grid;
+    grid-template-columns: repeat(2, 35% 60%);
+    grid-gap: 30px;
+    height: 240px;
+}
+
+.art1-container .first img {
+    position: absolute;
+    top: 10px;
+    left: 220px;
+}
+
+.art1-container .second {
+    position: relative;
+    z-index: 3000;
+    margin-left: 100px;
+}
+
+.art1-container h1 {
+    font-family: 'Special Elite', cursive;
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.art1-container p {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 25px;
+}
+
+.art2-container {
+    position: absolute;
+    top: 90px;
+    left: 620px;
+    width: 480px;
+}
+
+.art2-container .second {
+    margin-top: 370px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.characters1 {
+    position: absolute;
+    top: 250px;
+    left: -20px;
+}
+
+.characters2 {
+    position: absolute;
+    top: 220px;
+    left: 120px;
+    z-index: 4000;
+}
+
+.characters3 {
+    position: absolute;
+    top: 500px;
+    left: -20px;
+}
+
+.characters4 {
+    position: absolute;
+    top: 500px;
+    left: 170px;
+    z-index: 4000;
+}
+
+.characters5 {
+    position: absolute;
+    top: 520px;
+    left: 350px;
+    z-index: 4000;
+}
+
+.characters6 {
+    position: absolute;
+    top: 390px;
+    left: 20px;
+    z-index: 4000;
+}
+
+.joker {
+    position: absolute;
+    top: 50px;
+    z-index: 3000;
+}
+
+.green {
+    position: absolute;
+    left: 190px;
+    top: 20px;
+}
+
+#me-selected {
+    left: 1095px;
+}
+
+#me-selected h3 {
+    font-weight: 600;
+}
+
+.me-button {
+    position: absolute;
+    left: 1275px;
+    top: 540px;
+}
+
+.me-button:hover {
+    top: 535px;
+}
+
+.me1-container {
+    position: absolute;
+    top: 120px;
+    left: 65px;
+    width: 520px;
+}
+
+.me1-container h1 {
+    font-family: 'Special Elite', cursive;
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.me1-container p {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.me1-container p {
+    margin-top: 15px;
+    width: 250px;
+}
+
+.me1-container .first .label {
+    position: absolute;
+    top: -120px;
+    left: 280px;
+    z-index: 1000;
+}
+
+.me1-container .first .tape {
+    position: absolute;
+    z-index: 2000;
+    top: 50px;
+    left: 260px;
+}
+
+.me1-container .first .tape h2 {
+    position: absolute;
+    z-index: 2000;
+    font-family: 'Special Elite', cursive;
+    font-size: 28px;
+    top: 10px;
+    left: 60px;
+}
+
+.me1-container .first .tape h2:hover {
+    top: 8px;
+    left: 60px;
+    color: #D74E25;
+}
+
+.me1-container .first .contact {
+    position: absolute;
+    z-index: 2000;
+    font-size: 14px;
+    line-height: 25px;
+    top: 120px;
+    left: 320px;
+}
+
+.linkedin:hover,
+.uni:hover {
+    color: #D74E25;
+}
+
+.me1-container .second img {
+    position: absolute;
+    top: 280px;
+}
+
+.me2-container {
+    position: absolute;
+    top: 90px;
+    left: 620px;
+    width: 480px;
+}
+
+.me2-container h2 {
+    font-family: 'Special Elite', cursive;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.me2-container .note1 {
+    position: absolute;
+    left: -20px;
+    top: 30px;
+}
+
+.me2-container .note1 p {
+    position: absolute;
+    z-index: 3000;
+    width: 200px;
+    top: 73px;
+    left: 60px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20.5px;
+}
+
+.me2-container .note2 {
+    position: absolute;
+    top: 145px;
+}
+
+.me2-container .note2 h2 {
+    position: absolute;
+    z-index: 3000;
+    width: 200px;
+    top: 200px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.me2-container .note2 p {
+    position: absolute;
+    z-index: 3000;
+    width: 200px;
+    top: 280px;
+    left: 40px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.me2-container .second img {
+    position: absolute;
+    top: 2px;
+    left: 300px;
 }

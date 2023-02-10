@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI design</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin+Sketch:wght@700&family=Cabin:wght@400;700&family=Epilogue:wght@400;600;700&family=Homemade+Apple&family=Lato:wght@400;900&family=Love+Ya+Like+A+Sister&family=Nanum+Gothic:wght@400;800&family=Poppins:wght@400;500;700&family=Quicksand:wght@400;500&family=Roboto:wght@400;700&family=Rubik+Vinyl&family=Seaweed+Script&family=Special+Elite&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="pages-container">
+
+        <img class="inside" src="/src/portfolio-inside-both.png" height="860px">
+
+        <a href="/index.html">
+            <div class="home-button-pages">
+                <h3>Home</h3>
+                <img class="box4" src="/src/box6.png" height="fit-content">
+            </div>
+        </a>
+
+        <img class="art-button" src="/src/button6.png" height="60px">
+        <a href="/work/uidesign1.html">
+            <div class="ui-design-button-pages">
+                <h3>UI design</h3>
+                <img class="box1" src="/src/box1.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/graphicdesign1.html">
+            <div class="graphic-design-button-pages">
+                <h3>Graphic design</h3>
+                <img class="box2" src="/src/box2.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/animation.html">
+            <div class="animation-button-pages">
+                <h3>Animation &<br>Game design</h3>
+                <img class="box3" src="/src/box3.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/illustrations.html">
+            <div class="illustrations-button-pages" id="art-selected">
+                <h3>Illustrations</h3>
+                <img class="box4" src="/src/box4.png" height="fit-content">
+            </div>
+        </a>
+        <a href="/work/aboutme.html">
+            <div class="aboutme-button-pages">
+                <h3>About me &<br>Contact</h3>
+                <img class="box5" src="/src/box5.png" height="fit-content">
+            </div>
+        </a>
+
+        <div class="page">
+            <div class="art1-container">
+                <h1>My art</h1>
+                <div class="first">
+                    <p>I have been drawing my whole life. In high school, I went to art class where I studied everything from traditional painting, graphic design to printmaking. For the past few years I have also got more into digital drawing.</p>
+                    <img src="/src/art-img/1675183320763.jpg" width="290px">
+                </div>
+                <img class="second" src="/src/art-img/1675183320748.jpg" height="240px">
+                <img class="characters1" src="/src/art-img/characters1.png" width="120px">
+                <img class="characters2" src="/src/art-img/characters2.png" width="140px">
+                <img class="characters3" src="/src/art-img/characters3.png" width="120px">
+                <img class="characters4" src="/src/art-img/characters4.png" width="120px">
+                <img class="characters5" src="/src/art-img/characters5.png" width="150px">
+                <img class="characters6" src="/src/art-img/character6.png" width="130px">
+            </div>
+        </div>
+        <div class="art2-container">
+            <div class="first">
+                <img class="joker" src="/src/art-img/joker.png" width="320px">
+                <img class="green" src="/src/art-img/green.png" width="350px">
+            </div>
+            <div class="second">
+                <div class="artSlide">
+                    <img src="/src/art-img/twin-peaks1.png" width="90%">
+                </div>
+                <div class="artSlide">
+                    <img src="/src/art-img/twin-peaks2.png" width="90%">
+                </div>
+                <div class="artSlide">
+                    <img src="/src/art-img/twin-peaks3.png" width="90%">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/turnjs4/turn.min.js"></script>
+    <script>
+        var slideIndex = 0;
+        artSlides();
+
+        function artSlides() {
+            var i;
+            var slides = document.getElementsByClassName("artSlide");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(artSlides, 2500);
+        }
+
+        $(window).load(function() {
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+</body>
+
+<div class="se-pre-con"></div>
+
+</html>

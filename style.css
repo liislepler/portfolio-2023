@@ -22,6 +22,10 @@ body {
     overflow-x: hidden;
 }
 
+html::-webkit-scrollbar {
+    display: none;
+}
+
 .se-pre-con {
     position: fixed;
     left: 0px;
@@ -29,8 +33,6 @@ body {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url("/src/loader.gif") center no-repeat #fff;
-    background-size: 20vw;
 }
 
 a {

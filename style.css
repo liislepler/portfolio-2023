@@ -968,9 +968,10 @@ p a:hover {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        overflow-x: hidden;
     }
     .cover-container-phone .cover-phone {
-        margin-left: -100px;
+        margin-left: -105px;
     }
     .menu {
         display: grid;
@@ -996,25 +997,25 @@ p a:hover {
     }
     .ui-design-button-phone h3 {
         left: 45px;
-        top: 5px;
+        top: 45px;
     }
     .animation-button-phone h3 {
         left: 30px;
-        top: 70px;
+        top: 110px;
         text-align: center;
     }
     .graphic-design-button-phone h3 {
         left: 200px;
-        top: 5px;
+        top: 45px;
     }
     .illustrations-button-phone h3 {
         left: 208px;
-        top: 78px;
+        top: 118px;
     }
     .aboutme-button-phone h3 {
         text-align: center;
-        left: 130px;
-        top: 145px;
+        left: 128px;
+        top: 185px;
     }
     .box-about {
         position: absolute;

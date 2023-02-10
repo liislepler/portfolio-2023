@@ -963,9 +963,10 @@ p a:hover {
     }
     .cover-container-phone {
         position: relative;
+        width: 360px;
         display: block;
+        margin-left: auto;
         margin-right: auto;
-        overflow-x: hidden;
     }
     .cover-container-phone .cover-phone {
         margin-left: -100px;
@@ -977,6 +978,10 @@ p a:hover {
         grid-gap: 10px;
         margin-left: 8px;
         margin-top: 40px;
+        width: 360px;
+    }
+    .box {
+        position: relative;
     }
     .ui-design-button-phone h3,
     .graphic-design-button-phone h3,
@@ -990,25 +995,25 @@ p a:hover {
     }
     .ui-design-button-phone h3 {
         left: 45px;
-        top: 45px;
+        top: 5px;
     }
     .animation-button-phone h3 {
         left: 30px;
-        top: 110px;
+        top: 70px;
         text-align: center;
     }
     .graphic-design-button-phone h3 {
-        left: 198px;
-        top: 45px;
+        left: 200px;
+        top: 5px;
     }
     .illustrations-button-phone h3 {
-        left: 205px;
-        top: 117px;
+        left: 208px;
+        top: 78px;
     }
     .aboutme-button-phone h3 {
         text-align: center;
         left: 130px;
-        top: 182px;
+        top: 145px;
     }
     .box-about {
         position: absolute;

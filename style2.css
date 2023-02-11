@@ -1,0 +1,417 @@
+html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.pages-container {
+    position: relative;
+    width: 360px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 1.5%;
+}
+
+.box {
+    position: relative;
+}
+
+.ui-design-button-phone h3,
+.graphic-design-button-phone h3,
+.animation-button-phone h3,
+.illustrations-button-phone h3,
+.aboutme-button-phone h3 {
+    position: absolute;
+    font-family: 'Special Elite', cursive;
+    font-weight: 500;
+    z-index: 1000;
+}
+
+.ui-design-button-phone h3 {
+    left: 45px;
+    top: 45px;
+}
+
+.animation-button-phone h3 {
+    left: 30px;
+    top: 110px;
+    text-align: center;
+}
+
+.graphic-design-button-phone h3 {
+    left: 200px;
+    top: 45px;
+}
+
+.illustrations-button-phone h3 {
+    left: 208px;
+    top: 118px;
+}
+
+.aboutme-button-phone h3 {
+    text-align: center;
+    left: 128px;
+    top: 185px;
+}
+
+.box-about {
+    position: absolute;
+    left: 95px;
+}
+
+#selected h3 {
+    font-weight: 600;
+}
+
+.ui-button {
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+}
+
+.background {
+    position: absolute;
+    top: 310px;
+}
+
+.page {
+    position: absolute;
+    top: 320px;
+    left: 20px;
+    right: 20px;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    margin-bottom: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+p {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.clock-container h1,
+.clock-container h3 {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.clock-container h3 {
+    font-size: 20px;
+    margin: 0;
+    margin-left: 80px;
+    margin-bottom: 5px;
+    color: #B8C26C;
+}
+
+.clock-colors {
+    margin-left: 110px;
+    margin-top: 10px;
+}
+
+.note-container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    color: #A54A3E;
+}
+
+.note-colors {
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.internship-container h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: #0B3D5F;
+}
+
+.internship-container .first {
+    margin-bottom: 20px;
+}
+
+.internship-img {
+    height: 310px;
+}
+
+.horoscope-container h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #F27E70;
+}
+
+.horoscope-container .video {
+    text-align: center;
+}
+
+.italian-container h1 {
+    font-family: 'Seaweed Script', cursive;
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.graphic-button {
+    position: absolute;
+    z-index: 1000;
+    top: 10px;
+    right: 0px;
+}
+
+.magazine-container .title {
+    margin-top: 30px;
+    height: 60px;
+}
+
+.genart-container h1 {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.genart-container .second {
+    margin-top: 20px;
+}
+
+.book-container h1 {
+    font-family: 'Rubik Vinyl', cursive;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.animation-button {
+    position: absolute;
+    z-index: 1000;
+    top: 150px;
+    left: -10px;
+}
+
+.coffee-container h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.plants-container h1 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 50px;
+    color: #115A2C;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.plants-container .play {
+    position: absolute;
+    top: 1000px;
+    left: 65px;
+}
+
+.plants-container .second {
+    margin-top: 70px;
+}
+
+.plants-container .screenshot {
+    margin-left: -15px;
+}
+
+.illustrations-button {
+    position: absolute;
+    z-index: 1000;
+    top: 150px;
+    right: -10px;
+}
+
+.art1-container h1 {
+    font-family: 'Special Elite', cursive;
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.characters2 {
+    margin-left: 30px;
+}
+
+.characters4 {
+    margin-left: 40px;
+}
+
+.characters6 {
+    margin-left: 10px;
+}
+
+.me-button {
+    position: absolute;
+    z-index: 1000;
+    top: 220px;
+    right: 85px;
+}
+
+.me1-container h1 {
+    font-family: 'Special Elite', cursive;
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.me1-container .first .label {
+    position: absolute;
+    top: 225px;
+    left: 40px;
+    z-index: 1000;
+}
+
+.me1-container .first .tape {
+    position: absolute;
+    z-index: 2000;
+    top: 385px;
+    left: 18px;
+}
+
+.me1-container .first .tape h2 {
+    position: absolute;
+    z-index: 2000;
+    font-family: 'Special Elite', cursive;
+    font-size: 28px;
+    top: 10px;
+    left: 60px;
+}
+
+.me1-container .first .contact {
+    position: absolute;
+    z-index: 2000;
+    font-size: 14px;
+    line-height: 30px;
+    top: 450px;
+    left: 80px;
+}
+
+.me1-container .second img {
+    position: absolute;
+    top: 640px;
+    margin-left: -15px;
+}
+
+.me2-container h2 {
+    font-family: 'Special Elite', cursive;
+    font-size: 35px;
+    margin-top: 720px;
+    margin-left: 30px;
+}
+
+.me2-container .note1 {
+    position: absolute;
+    left: -20px;
+    top: 490px;
+}
+
+.me2-container .note1 p {
+    position: absolute;
+    z-index: 3000;
+    width: 200px;
+    top: 553px;
+    left: 60px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20.1px;
+}
+
+.me2-container .note2 {
+    position: absolute;
+    top: 620px;
+    left: 10px;
+}
+
+.me2-container .note2 h2 {
+    position: absolute;
+    z-index: 3000;
+    width: 200px;
+    left: 30px;
+    font-size: 20px;
+}
+
+.me2-container .note2 p {
+    position: absolute;
+    z-index: 3000;
+    width: 200px;
+    top: 750px;
+    left: 60px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.me2-container .second img {
+    position: absolute;
+    top: 1600px;
+}

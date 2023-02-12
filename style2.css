@@ -427,7 +427,7 @@ p {
 
 .home-button {
     position: fixed;
-    top: 630px;
+    bottom: 20px;
     right: 15%;
     z-index: 9000;
 }

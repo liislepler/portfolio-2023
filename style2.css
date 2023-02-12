@@ -5,7 +5,8 @@ html {
 
 html,
 body {
-    min-width: 100%;
+    display: block;
+    max-width: 360px;
     min-height: 100%;
     margin: 0 auto;
 }
@@ -40,6 +41,12 @@ a {
     overflow-x: hidden;
 }
 
+.pages-container::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    background: transparent;
+}
+
 .menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -66,7 +73,7 @@ a {
 }
 
 .ui-design-button-phone h3 {
-    left: 45px;
+    left: 42px;
     top: 45px;
 }
 
@@ -248,8 +255,8 @@ p {
 .animation-button {
     position: absolute;
     z-index: 1000;
-    top: 150px;
-    left: -10px;
+    top: 77px;
+    left: 0px;
 }
 
 .coffee-container h1 {
@@ -285,8 +292,8 @@ p {
 .illustrations-button {
     position: absolute;
     z-index: 1000;
-    top: 150px;
-    right: -10px;
+    top: 87px;
+    right: 0px;
 }
 
 .art1-container h1 {
@@ -313,7 +320,7 @@ p {
     position: absolute;
     z-index: 1000;
     top: 220px;
-    right: 85px;
+    right: 75px;
 }
 
 .me1-container h1 {
@@ -416,4 +423,25 @@ p {
 .me2-container .second img {
     position: absolute;
     top: 1600px;
+}
+
+.home-button {
+    position: fixed;
+    top: 630px;
+    right: 15%;
+    z-index: 9000;
+}
+
+.home-button h3 {
+    font-family: 'Special Elite', cursive;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 2px;
+}
+
+.page button {
+    border: none;
+    background-color: #f5f1eb9c;
+    width: 60px;
+    height: 40px;
 }

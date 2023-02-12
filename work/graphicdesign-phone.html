@@ -51,8 +51,8 @@
         <img src="../src/portfolio-inside2.png" height="535px">
         <img class="background" src="../src/paper.png" height="2500px">
 
-
         <div class="page">
+            <button class="home-button"><a href="../index.html"><h3>Home</h3></a></button>
             <div class="magazine-container">
                 <div class="title">
                     <div class="titleSlide">
@@ -69,10 +69,7 @@
                 <div class="first ">
                     <p>
                         As part of the course <b>Graphic Design and Visual Communication</b>, I had a group project to make a magazine about graphic design. My group chose our magazine to highlight female designers and artists, therefore everything shown
-                        in our 70-page
-                    </p>
-                    <p>
-                        magazine is done by women. The magazine was done on <b>InDesign</b> with the help of <b>Photoshop</b> and <b>Illustrator</b>.
+                        in our 70-page magazine is done by women. The magazine was done on <b>InDesign</b> with the help of <b>Photoshop</b> and <b>Illustrator</b>.
                         <br>
                         <br>Co-creators: <a target="_blank" href="https://www.behance.net/jessicansman">Jessica Näsman</a>, <a target="_blank" href="https://www.behance.net/martahrkaloviccc">Marta Hrkalovic</a>, <a target="_blank" href="https://www.behance.net/mariamshoeib">Mariam Basyouny</a>
                 </div>
@@ -95,8 +92,8 @@
                     </p>
                     <div style="overflow: hidden; text-align: center;">
                         <video width="100%" autoplay muted loop>
-                        <source src="../src/genart-img/genart-logo1.mp4" type="video/mp4" id="videoText">
-                    </video>
+                            <source src="../src/genart-img/genart-logo1.mp4" type="video/mp4" id="videoText">
+                        </video>
                     </div>
                 </div>
                 <div class="second">
@@ -214,7 +211,9 @@
             setTimeout(titleSlides, 1000);
         }
 
+        var slideIndex = 0;
         genSlides();
+        bookSlides();
 
         function genSlides() {
             var i;
@@ -230,8 +229,6 @@
             slides[slideIndex - 1].style.display = "block";
             setTimeout(genSlides, 2500);
         }
-
-        bookSlides();
 
         function bookSlides() {
             var i;
@@ -252,10 +249,12 @@
             setTimeout(bookSlides, 2500);
         }
 
+
         $(window).load(function() {
             $(".se-pre-con").fadeOut("slow");;
         });
     </script>
+    <script src="../script.js"></script>
 </body>
 
 <div class="se-pre-con"></div>

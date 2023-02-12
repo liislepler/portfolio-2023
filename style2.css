@@ -177,6 +177,7 @@ p {
 
 .note-colors {
     margin-left: 50px;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
@@ -213,6 +214,7 @@ p {
     font-size: 40px;
     margin: 0;
     margin-top: 50px;
+    color: black;
 }
 
 .graphic-button {

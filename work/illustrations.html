@@ -78,14 +78,16 @@
                 <img class="green" src="../src/art-img/green.png" width="350px">
             </div>
             <div class="second">
-                <div class="artSlide">
-                    <img src="../src/art-img/twin-peaks1.png" width="90%">
-                </div>
-                <div class="artSlide">
-                    <img src="../src/art-img/twin-peaks2.png" width="90%">
-                </div>
-                <div class="artSlide">
-                    <img src="../src/art-img/twin-peaks3.png" width="90%">
+                <div class="slide-container" data-cycle="2000">
+                    <div class="slide">
+                        <img src="../src/art-img/twin-peaks1.png" width="90%">
+                    </div>
+                    <div class="slide">
+                        <img src="../src/art-img/twin-peaks2.png" width="90%">
+                    </div>
+                    <div class="slide">
+                        <img src="../src/art-img/twin-peaks3.png" width="90%">
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,23 +97,31 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>
-        var slideIndex = 0;
-        artSlides();
+        var slideshowContainers = document.getElementsByClassName("slide-container");
 
-        function artSlides() {
-            var i;
-            var slides = document.getElementsByClassName("artSlide");
-            var dots = document.getElementsByClassName("dot");
+        for (let s = 0; s < slideshowContainers.length; s++) {
+            var cycle = slideshowContainers[s].dataset.cycle;
+            var slides = slideshowContainers[s].querySelectorAll('.slide');
+            var slideIndex = 0;
+            showSlides(slides, slideIndex, cycle);
+        };
+
+        function showSlides(slides, slideIndex, cycle) {
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
-            }
+            };
+
             slideIndex++;
             if (slideIndex > slides.length) {
                 slideIndex = 1
-            }
+            };
+
             slides[slideIndex - 1].style.display = "block";
-            setTimeout(artSlides, 2500);
-        }
+
+            setTimeout(function() {
+                showSlides(slides, slideIndex, cycle)
+            }, cycle);
+        };
 
         $(window).load(function() {
             $(".se-pre-con").fadeOut("slow");;

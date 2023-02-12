@@ -83,16 +83,13 @@
                     </div>
                 </div>
                 <div class="second">
-                    <div class="restSlide">
-                        <img src="../src/italian-img/restaurant-phone.png" width="100%">
-                    </div>
-                    <div class="restSlide">
-                        <img src="../src/italian-img/restaurant.png" width="100%">
-                    </div>
-
-                    <div style="text-align:center">
-                        <span class="dot"></span>
-                        <span class="dot"></span>
+                    <div class="slide-container" data-cycle="3000">
+                        <div class="slide">
+                            <img src="../src/italian-img/restaurant-phone.png" width="100%">
+                        </div>
+                        <div class="slide">
+                            <img src="../src/italian-img/restaurant.png" width="100%">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,27 +102,31 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>
-        var slideIndex = 0;
-        restSlides();
+        var slideshowContainers = document.getElementsByClassName("slide-container");
 
-        function restSlides() {
-            var i;
-            var slides = document.getElementsByClassName("restSlide");
-            var dots = document.getElementsByClassName("dot");
+        for (let s = 0; s < slideshowContainers.length; s++) {
+            var cycle = slideshowContainers[s].dataset.cycle;
+            var slides = slideshowContainers[s].querySelectorAll('.slide');
+            var slideIndex = 0;
+            showSlides(slides, slideIndex, cycle);
+        };
+
+        function showSlides(slides, slideIndex, cycle) {
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
-            }
+            };
+
             slideIndex++;
             if (slideIndex > slides.length) {
                 slideIndex = 1
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
+            };
+
             slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(restSlides, 2500);
-        }
+
+            setTimeout(function() {
+                showSlides(slides, slideIndex, cycle)
+            }, cycle);
+        };
 
         $(window).load(function() {
             $(".se-pre-con").fadeOut("slow");;

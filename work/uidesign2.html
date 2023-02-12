@@ -73,34 +73,25 @@
                 </div>
             </div>
             <div class="internship-img">
-                <div class="dots" style="text-align:center">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-
-                <div class="internSlide">
-                    <img src="../src/internship-img/account.png" width="100%">
-                </div>
-                <div class="internSlide">
-                    <img src="../src/internship-img/dashboard.png" width="100%">
-                </div>
-                <div class="internSlide">
-                    <img src="../src/internship-img/blog.png" width="100%">
-                </div>
-                <div class="internSlide">
-                    <img src="../src/internship-img/dispute.png" width="100%">
-                </div>
-                <div class="internSlide">
-                    <img src="../src/internship-img/payment.png" width="100%">
-                </div>
-                <div class="internSlide">
-                    <img src="../src/internship-img/Colours.png" width="100%">
+                <div class="slide-container" data-cycle="2500">
+                    <div class="slide">
+                        <img src="../src/internship-img/account.png" width="100%">
+                    </div>
+                    <div class="slide">
+                        <img src="../src/internship-img/dashboard.png" width="100%">
+                    </div>
+                    <div class="slide">
+                        <img src="../src/internship-img/blog.png" width="100%">
+                    </div>
+                    <div class="slide">
+                        <img src="../src/internship-img/dispute.png" width="100%">
+                    </div>
+                    <div class="slide">
+                        <img src="../src/internship-img/payment.png" width="100%">
+                    </div>
+                    <div class="slide">
+                        <img src="../src/internship-img/Colours.png" width="100%">
+                    </div>
                 </div>
             </div>
             <a href="../work/uidesign3.html">
@@ -113,27 +104,31 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script>
-            var slideIndex = 0;
-            internSlides();
+            var slideshowContainers = document.getElementsByClassName("slide-container");
 
-            function internSlides() {
-                var i;
-                var slides = document.getElementsByClassName("internSlide");
-                var dots = document.getElementsByClassName("dot");
+            for (let s = 0; s < slideshowContainers.length; s++) {
+                var cycle = slideshowContainers[s].dataset.cycle;
+                var slides = slideshowContainers[s].querySelectorAll('.slide');
+                var slideIndex = 0;
+                showSlides(slides, slideIndex, cycle);
+            };
+
+            function showSlides(slides, slideIndex, cycle) {
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
-                }
+                };
+
                 slideIndex++;
                 if (slideIndex > slides.length) {
                     slideIndex = 1
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
+                };
+
                 slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-                setTimeout(internSlides, 2500);
-            }
+
+                setTimeout(function() {
+                    showSlides(slides, slideIndex, cycle)
+                }, cycle);
+            };
 
             $(window).load(function() {
                 $(".se-pre-con").fadeOut("slow");;

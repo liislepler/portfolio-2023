@@ -131,14 +131,14 @@ a {
     width: 5px;
     margin: 0 2px;
     margin-bottom: 5px;
-    background-color: #bbb;
+    background-color: #dcd9c6;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
 .active {
-    background-color: #717171;
+    background-color: #bbb09f;
 }
 
 p {
@@ -191,7 +191,7 @@ p {
 }
 
 .internship-img {
-    height: 310px;
+    height: 400px;
 }
 
 .horoscope-container h1 {

@@ -58,14 +58,16 @@
 
         <div class="page">
             <div class="magazine-container">
-                <div class="titleSlide">
-                    <img src="../src/magazine-img/title1.png" width="100%" height="100px">
-                </div>
-                <div class=" titleSlide ">
-                    <img src="../src/magazine-img/title2.png " width="100%" height="100px">
-                </div>
-                <div class=" titleSlide ">
-                    <img src="../src/magazine-img/title3.png " width="100% " height="100px ">
+                <div class="slide-container" data-cycle="1000">
+                    <div class="slide">
+                        <img src="../src/magazine-img/title1.png" width="100%">
+                    </div>
+                    <div class="slide">
+                        <img src="../src/magazine-img/title2.png " width="100%">
+                    </div>
+                    <div class="slide">
+                        <img src="../src/magazine-img/title3.png " width="100%">
+                    </div>
                 </div>
 
                 <div class="first ">
@@ -93,23 +95,31 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script>
-            var slideIndex = 0;
-            titleSlides();
+            var slideshowContainers = document.getElementsByClassName("slide-container");
 
-            function titleSlides() {
-                var i;
-                var slides = document.getElementsByClassName("titleSlide ");
-                var dots = document.getElementsByClassName("dot ");
+            for (let s = 0; s < slideshowContainers.length; s++) {
+                var cycle = slideshowContainers[s].dataset.cycle;
+                var slides = slideshowContainers[s].querySelectorAll('.slide');
+                var slideIndex = 0;
+                showSlides(slides, slideIndex, cycle);
+            };
+
+            function showSlides(slides, slideIndex, cycle) {
                 for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none ";
-                }
+                    slides[i].style.display = "none";
+                };
+
                 slideIndex++;
                 if (slideIndex > slides.length) {
                     slideIndex = 1
-                }
-                slides[slideIndex - 1].style.display = "block ";
-                setTimeout(titleSlides, 1000);
-            }
+                };
+
+                slides[slideIndex - 1].style.display = "block";
+
+                setTimeout(function() {
+                    showSlides(slides, slideIndex, cycle)
+                }, cycle);
+            };
 
             $(window).load(function() {
                 $(".se-pre-con").fadeOut("slow");;

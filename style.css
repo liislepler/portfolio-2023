@@ -374,45 +374,39 @@ p a:hover {
     margin-bottom: 10px;
 }
 
-.horoscope-container {
+.dino-container {
     position: absolute;
     top: 120px;
     left: 65px;
     width: 520px;
 }
 
-.horoscope-container .first {
+.dino-container .first {
     display: grid;
-    grid-template-columns: repeat(2, 30% 35%);
-    grid-gap: 40px;
+    grid-template-columns: repeat(2, 38% 20%);
+    grid-gap: 20px;
 }
 
-.horoscope-container h1 {
-    font-family: 'Roboto', sans-serif;
+.dino-container h1 {
+    font-family: 'Coiny';
     font-size: 60px;
     margin: 0;
-    margin-bottom: 20px;
-    color: #F27E70;
+    margin-bottom: 10px;
+    color: #7da520;
 }
 
-.horoscope-container p {
+.dino-container p {
     font-family: 'Epilogue', sans-serif;
     font-size: 12px;
     line-height: 16px;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
-.horoscope-colors {
-    position: absolute;
-    top: 200px;
-    left: 270px;
-}
-
-.horoscope-container .second {
+.dino-container .second {
     text-align: center;
 }
 
-.horoscope-container .second img:hover {
+.dino-container video:hover {
     position: relative;
     z-index: 3000;
 }
